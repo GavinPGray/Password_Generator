@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/3d3e4804b5.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="generator.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+    <div class="generator">
+      <h1 class="center">Generate Password</h1>
+        <hr class="line" />
+        <h2 class="center">Customize your password</h2>
+        <div class="result">
+        <span id="result"></span>
+        <button class="copy" type="button" id="copy">
+          <i class="fa-solid fa-copy"></i>
+        </button>
+        </div>
+        <form class="form">
+         
+            <label>Number of Characters
+              <input type="number" id="amount" min="1" max="30" value="10">
+            </label>
+            
+            
+              <div class="checkboxes">
+                <label>Lowercase
+                  <input type="checkbox" class='checkbox' checked id="lowercase">
+                  </label>
+
+                <label>Uppercase
+                <input type="checkbox" class='checkbox' checked id="uppercase">
+                </label>
+              
+
+              
+                <label>Numbers
+                <input type="checkbox" class='checkbox' checked id="numbers">
+                </label>
+              
+
+              
+                <label>Symbols
+                <input type="checkbox" class='checkbox' checked id="symbols">
+                </label>
+              </div>
+            
+            
+            
+            <button id="generate" class="generateBTN" type="button"><p class="btn_font">Generate Password</p></button>
+          
+        </form>
+    </div>
+    
+</body>
+</html>
